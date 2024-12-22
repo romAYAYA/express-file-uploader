@@ -1,8 +1,18 @@
-commands: 
-docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build              | runs prod mode
-docker-compose up                                                                       | runs dev mode
+# Docker Compose Commands
 
-.env vars:
+## Run in Production Mode
+
+```bash
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build
+```
+
+## Run in Development Mode
+```bash
+docker-compose up
+```
+
+# Environment Variables
+```env
 DB_HOST=
 DB_USER=
 DB_PASSWORD=
@@ -16,3 +26,4 @@ JWT_SECRET=
 
 APP_PORT=
 APP_HOST=
+```
