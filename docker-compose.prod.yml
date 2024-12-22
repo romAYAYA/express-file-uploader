@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  app:
+    command: npm run start
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes: []
