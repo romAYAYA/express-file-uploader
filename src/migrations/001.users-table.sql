@@ -1,4 +1,4 @@
-CREATE TABLE users_test (
+CREATE TABLE users (
     id VARCHAR(255) NOT NULL PRIMARY KEY,
     password VARCHAR(255) NOT NULL
 );
