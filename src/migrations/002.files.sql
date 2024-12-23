@@ -1,0 +1,9 @@
+CREATE TABLE files (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    extension VARCHAR(50) NOT NULL,
+    mime_type VARCHAR(100) NOT NULL,
+    size BIGINT NOT NULL,
+    upload_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+    filename VARCHAR(255) NOT NULL
+);
